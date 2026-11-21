@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.Testing" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="OpenTelemetry" Version="1.21.0" />
+    <PackageReference Include="OpenTelemetry.Exporter.InMemory" Version="1.21.0" />
+    <PackageReference Include="Testcontainers.Kafka" Version="4.17.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\IndexedCache\IndexedCache.csproj" />
+    <ProjectReference Include="..\..\src\IndexedCache.Kafka\IndexedCache.Kafka.csproj" />
+    <ProjectReference Include="..\..\src\IndexedCache.Lucene\IndexedCache.Lucene.csproj" />
+    <ProjectReference Include="..\..\src\IndexedCache.RocksDb\IndexedCache.RocksDb.csproj" />
+  </ItemGroup>
+
+</Project>

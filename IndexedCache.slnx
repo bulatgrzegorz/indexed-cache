@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/IndexedCache.RocksDb/IndexedCache.RocksDb.csproj" />
+    <Project Path="src/IndexedCache/IndexedCache.csproj" />
+    <Project Path="src/IndexedCache.Kafka/IndexedCache.Kafka.csproj" />
+    <Project Path="src/IndexedCache.Lucene/IndexedCache.Lucene.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/IndexedCache.Tests/IndexedCache.Tests.csproj" />
+  </Folder>
+</Solution>
